@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: absolute;
+  transform: translateX(100%);
+}
+
+.smooth {
+  transition: 1s ease;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.active {
+  transform: translateX(0);
+}
+
+.one {
+  background: url(../images/1.jpg) no-repeat center;
+}
+.two {
+  background: url(../images/2.jpg) no-repeat center;
+}
+.three {
+  background: url(../images/3.jpg) no-repeat center;
+}
+.four {
+  background: url(../images/4.jpg) no-repeat center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.prev {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 30px;
+}
+.next {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 30px;
+}
